@@ -1,4 +1,4 @@
-#N canvas 600 190 784 554 10;
+#N canvas 166 229 784 554 10;
 #X obj 257 445 rectangle 5.33 4;
 #X obj 257 381 alpha;
 #X obj 390 441 rectangle 5.33 4;
@@ -6,7 +6,7 @@
 #X obj 277 20 t f f;
 #X obj 304 42 expr 1-$f1;
 #X obj 105 156 hsl 100 15 0 1 0 0 empty empty Alpha 5 8 0 10 -258113
--1 -1 0 1;
+-1 -1 9900 1;
 #X obj 105 138 hsl 100 15 0 1 0 0 empty empty Pan 5 8 0 10 -262144
 -1 -1 0 1;
 #X obj 317 377 r x_size;
@@ -18,7 +18,7 @@
 #X obj 147 263 f;
 #X obj 147 296 s \$0-tgl;
 #X obj 259 170 r \$0-tgl;
-#X obj 159 120 tgl 15 0 empty empty blend 17 7 0 10 -262144 -1 -1 0
+#X obj 159 120 tgl 15 0 empty empty blend 17 7 0 10 -262144 -1 -1 1
 1;
 #X msg 190 273 auto 1;
 #X obj 190 246 loadbang;
@@ -49,6 +49,14 @@
 #X obj 412 224 t a b;
 #X msg 391 113 open data/a1.mov;
 #X msg 402 144 open data/a2.mov;
+#X msg 529 112 open \$1;
+#X obj 529 88 openpanel;
+#X obj 125 118 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 569 159 open \$1;
+#X obj 571 127 openpanel;
+#X obj 103 118 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
 #X connect 1 0 22 0;
 #X connect 3 0 23 0;
 #X connect 4 0 24 0;
@@ -109,4 +117,10 @@
 #X connect 44 1 41 0;
 #X connect 45 0 31 0;
 #X connect 46 0 32 0;
+#X connect 47 0 31 0;
+#X connect 48 0 47 0;
+#X connect 49 0 48 0;
+#X connect 50 0 32 0;
+#X connect 51 0 50 0;
+#X connect 52 0 51 0;
 #X coords 0 -1 1 1 110 75 1 100 100;
