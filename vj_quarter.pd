@@ -261,6 +261,8 @@
 #X obj 1032 575 loadbang;
 #X msg 1032 596 12;
 #X obj 1053 480 expr int($f1*1000)/1000;
+#X msg 1101 583 font forgottenfuturistrg.ttf;
+#X obj 1101 554 loadbang;
 #X connect 0 0 5 0;
 #X connect 1 0 28 0;
 #X connect 1 1 29 0;
@@ -335,13 +337,15 @@
 #X connect 57 0 58 0;
 #X connect 58 0 47 1;
 #X connect 59 0 56 0;
+#X connect 60 0 47 0;
+#X connect 61 0 60 0;
 #X restore 485 212 pd shape;
 #X obj 485 238 unpack f f f;
 #X obj 545 187 % 100;
 #X obj 424 -91 separator;
 #X obj 381 -136 spigot;
 #X obj 414 -165 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-0 1;
+1 1;
 #X obj 551 19 loadbang;
 #X obj 424 -50 color 1 1 1;
 #X obj 424 -23 GEMglPointSize 2;
