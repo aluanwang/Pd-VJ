@@ -1,9 +1,9 @@
-#N canvas 277 28 915 780 10;
+#N canvas 442 22 915 780 10;
 #X floatatom 396 128 5 0 0 0 - - -;
 #X obj 544 9 r vj-vol;
 #X floatatom 545 72 5 0 0 0 - - -;
 #X obj 106 117 hsl 100 15 0 1 0 0 empty empty Alpha 5 7 0 10 -258113
--1 -1 9900 1;
+-1 -1 4100 1;
 #X obj 104 179 sel 0;
 #X msg 104 231 0;
 #X msg 135 207 1;
@@ -102,6 +102,7 @@
 #X connect 7 0 1 0;
 #X connect 8 0 7 1;
 #X connect 9 0 8 0;
+#X connect 9 0 10 0;
 #X connect 10 0 7 0;
 #X restore -86 558 pd color=========;
 #N canvas 0 22 450 300 rotate========= 0;
@@ -132,10 +133,10 @@
 #X obj 191 257 s fog-tgl;
 #X obj 316 443 GEMglPointSize 3;
 #X obj 262 153 hsl 100 15 0.5 1 0 0 empty empty Rotate 5 7 0 10 -262144
--1 -1 2933 1;
+-1 -1 3361 1;
 #X obj 563 207 metro 20;
 #X obj 262 134 hsl 100 15 0.1 1 0 0 empty empty Speed 5 7 0 10 -262144
--1 -1 5621 1;
+-1 -1 7451 1;
 #X obj 272 92 tgl 15 0 empty empty R 5 7 0 10 -262144 -1 -1 1 1;
 #X obj 152 16 metro 2000;
 #X obj 76 67 + 0.5;
