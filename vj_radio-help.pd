@@ -1,4 +1,4 @@
-#N canvas 476 195 903 369 10;
+#N canvas 476 195 515 419 10;
 #X obj 41 146 gemwin;
 #X obj 288 275 loadbang;
 #X obj 177 168 gemhead;

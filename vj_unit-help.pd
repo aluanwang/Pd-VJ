@@ -1,0 +1,24 @@
+#N canvas 484 173 425 417 10;
+#X obj 23 58 gemwin;
+#X obj 63 105 loadbang;
+#X obj 24 185 vj_unit;
+#X msg 63 153 start -1.5 -1.5 1 \, end -1.5 1.5 1 \, \, num 5 \, range
+-2 2;
+#X obj 24 82 gemhead 20;
+#X msg 23 22 reset \, create \, 1;
+#X obj 24 127 color 1 1 1;
+#X obj 62 244 loadbang;
+#X obj 23 324 vj_unit;
+#X obj 23 221 gemhead 20;
+#X obj 23 266 color 1 1 1;
+#X msg 62 292 start -3 -3 0 \, end 3 -3 0 \, \, num 11 \, range 0 10
+;
+#X connect 1 0 3 0;
+#X connect 3 0 2 1;
+#X connect 4 0 6 0;
+#X connect 5 0 0 0;
+#X connect 6 0 2 0;
+#X connect 7 0 11 0;
+#X connect 9 0 10 0;
+#X connect 10 0 8 0;
+#X connect 11 0 8 1;

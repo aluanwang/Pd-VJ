@@ -1,4 +1,4 @@
-#N canvas 216 69 829 679 10;
+#N canvas 541 76 829 679 10;
 #X obj 252 85 t a b;
 #X obj 299 121 f 0;
 #X obj 299 153 + 1;
@@ -10,7 +10,7 @@
 #X obj 188 461 scaleXYZ 1 1 1;
 #X floatatom 421 365 5 0 0 0 - - -;
 #X obj 535 79 adc~;
-#X obj 423 83 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 423 83 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 339 -40 loadbang;
 #X obj 339 16 t f f f;
@@ -35,7 +35,7 @@
 #X obj 299 278 expr ($f1*($f2*2))-$f2;
 #X obj 38 426 table \$0-music 200;
 #X obj 106 122 hsl 100 15 0 0.8 0 0 empty empty Alpha 5 8 0 10 -258113
--1 -1 0 1;
+-1 -1 9900 1;
 #X obj 103 151 sel 0;
 #X msg 103 203 0;
 #X msg 134 179 1;
@@ -47,7 +47,10 @@
 #X msg 103 81 0;
 #X obj 443 133 catch~ vol-10;
 #X obj 423 105 metro 10;
-#X obj 252 27 gemhead -1;
+#X obj 252 -18 gemhead -1;
+#X obj 251 6 t a b;
+#X obj 505 208 loadbang;
+#X msg 504 233 8;
 #X connect 0 0 6 0;
 #X connect 0 1 1 0;
 #X connect 1 0 2 0;
@@ -62,6 +65,7 @@
 #X connect 8 0 40 0;
 #X connect 9 0 38 0;
 #X connect 10 0 14 0;
+#X connect 10 0 27 0;
 #X connect 11 0 44 0;
 #X connect 12 0 39 0;
 #X connect 13 0 3 1;
@@ -99,5 +103,8 @@
 #X connect 42 0 33 0;
 #X connect 43 0 27 0;
 #X connect 44 0 27 0;
-#X connect 45 0 3 0;
+#X connect 45 0 46 0;
+#X connect 46 0 3 0;
+#X connect 47 0 48 0;
+#X connect 48 0 30 0;
 #X coords 0 -1 1 1 110 40 1 100 100;
