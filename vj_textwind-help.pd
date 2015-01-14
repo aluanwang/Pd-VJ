@@ -1,0 +1,5 @@
+#N canvas 457 396 450 300 10;
+#X msg 280 85 create \, 1;
+#X obj 281 117 gemwin;
+#X obj 124 99 vj_textwind;
+#X connect 0 0 1 0;

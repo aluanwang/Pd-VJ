@@ -1,6 +1,6 @@
 #N canvas 92 22 998 680 10;
 #X obj 106 140 hsl 100 15 0 1 0 0 empty empty Alpha 5 7 0 10 -258113
--1 -1 6100 1;
+-1 -1 3600 1;
 #X obj 78 51 loadbang;
 #X msg 78 77 0;
 #X obj 745 -31 r vj-vol;
@@ -9,7 +9,7 @@
 -1;
 #X obj 226 495 openpanel;
 #X msg 226 519 open \$1;
-#X obj 154 122 tgl 15 0 empty empty blend 17 7 0 10 -262144 -1 -1 1
+#X obj 154 122 tgl 15 0 empty empty blend 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 372 585 pix_texture;
 #X obj 372 617 alpha;
@@ -19,7 +19,7 @@
 #X obj 482 224 + 1;
 #N canvas 0 22 450 300 (subpatch) 0;
 #X array \$0-z 10 float 3;
-#A 0 3.85974 4.85974 5.85974 6.85974 7.85974 0.859739 1.85974 2.85974
+#A 0 5.78666 6.78666 7.78666 0.786657 1.78666 2.78666 3.78666 4.78666
 6.4 7.2;
 #X coords 0 8 10 0 200 140 1;
 #X restore 709 585 graph;

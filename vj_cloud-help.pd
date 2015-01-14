@@ -1,0 +1,5 @@
+#N canvas 0 22 450 300 10;
+#X msg 97 119 create \, 1;
+#X obj 96 145 gemwin;
+#X obj 208 138 vj_cloud;
+#X connect 0 0 1 0;

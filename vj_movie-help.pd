@@ -1,0 +1,5 @@
+#N canvas 676 167 157 306 10;
+#X obj -227 15 vj_movie;
+#X msg -226 101 reset \, create \, 1;
+#X obj -226 129 gemwin;
+#X connect 1 0 2 0;

@@ -1,10 +1,10 @@
-#N canvas 122 216 1004 483 10;
+#N canvas 271 95 1004 483 10;
 #X obj 294 14 r vj-pitch-2;
 #X floatatom 294 39 5 0 0 0 - - -;
 #X obj 390 64 r vj-vol;
 #X floatatom 390 88 5 0 0 0 - - -;
 #X obj 106 117 hsl 100 15 0 1 0 0 empty empty Alpha 5 7 0 10 -258113
--1 -1 9900 1;
+-1 -1 5805 1;
 #X obj 103 173 sel 0;
 #X msg 103 225 0;
 #X msg 134 201 1;
@@ -63,7 +63,7 @@
 #X obj 714 122 sel 0;
 #X msg 713 148 5;
 #X msg 746 149 2;
-#X obj 559 268 newWave 150;
+#X obj 559 268 newWave 110;
 #X connect 0 0 1 0;
 #X connect 2 0 3 0;
 #X connect 3 0 29 0;

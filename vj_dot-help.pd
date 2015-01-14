@@ -1,0 +1,13 @@
+#N canvas 706 289 450 300 10;
+#X obj 83 77 vj_dot;
+#X msg 246 103 create \, 1;
+#X obj 246 127 gemwin;
+#X obj 83 24 adc~;
+#X obj 93 169 loadbang;
+#X msg 93 197 \; pd dsp 1;
+#X obj 83 53 fiddle~;
+#X connect 1 0 2 0;
+#X connect 3 0 6 0;
+#X connect 3 1 0 1;
+#X connect 4 0 5 0;
+#X connect 6 0 0 0;

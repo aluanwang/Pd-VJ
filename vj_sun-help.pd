@@ -1,0 +1,6 @@
+#N canvas 15 22 450 300 10;
+#X declare -lib mrpeach;
+#X msg 241 116 create \, 1;
+#X obj 241 144 gemwin;
+#X obj 58 86 vj_sun;
+#X connect 0 0 1 0;
