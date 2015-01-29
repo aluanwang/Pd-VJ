@@ -1,0 +1,5 @@
+#N canvas 814 33 295 159 10;
+#X msg -3040 -4154 create \, 1;
+#X obj -3041 -4127 gemwin;
+#X obj -3040 -4199 vj_amoeba;
+#X connect 0 0 1 0;
