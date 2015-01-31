@@ -7,7 +7,7 @@
 #X obj 315 36 r \$0-gemhead;
 #X obj 432 39 r \$0-gemhead;
 #X obj 105 117 hsl 100 15 0 1 0 0 empty empty Alpha 5 7 0 10 -258113
--1 -1 9900 1;
+-1 -1 0 1;
 #X obj 136 151 sel 0;
 #X msg 136 203 0;
 #X obj 167 204 f;
@@ -108,6 +108,10 @@
 #X obj 47 498 packOSC;
 #X floatatom 47 436 5 0 0 0 - - -;
 #X msg 47 457 send /vj /neo \$1;
+#X obj 34 13 r touchosc;
+#X obj 34 37 routeOSC /vj;
+#X floatatom 34 83 5 0 0 0 - - -;
+#X obj 34 61 route /32;
 #X connect 0 0 2 0;
 #X connect 1 0 4 0;
 #X connect 2 0 1 0;
@@ -189,4 +193,8 @@
 #X connect 105 0 104 0;
 #X connect 106 0 107 0;
 #X connect 107 0 105 0;
+#X connect 108 0 109 0;
+#X connect 109 0 111 0;
+#X connect 110 0 7 0;
+#X connect 111 0 110 0;
 #X coords 0 -1 1 1 110 35 1 100 100;

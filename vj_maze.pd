@@ -15,7 +15,7 @@
 #X obj 17 583 table Data;
 #X obj 237 229 bng 30 250 50 0 empty empty empty 17 7 0 10 -258113
 -1 -1;
-#X obj 237 176 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 237 176 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #N canvas 477 194 729 539 setup=========== 0;
 #X obj 400 107 bng 15 250 50 0 empty empty empty 8 -8 0 10 -262144
@@ -85,7 +85,7 @@
 #X obj 278 269 expr if(($f1!=0) &&($f2!=0) &&($f3!=0) &&($f4!=0) \,
 0 \, 1);
 #X obj 245 339 spigot;
-#X obj 278 293 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 278 293 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X floatatom 278 233 5 0 0 0 - - -;
 #X floatatom 389 237 5 0 0 0 - - -;
@@ -107,7 +107,7 @@
 #X obj 243 -125 t a a;
 #X obj 524 -131 t a a;
 #X obj -213 -10 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-0 1;
+1 1;
 #X obj -240 -172 inlet;
 #X obj -13 -159 inlet;
 #X obj 243 -152 inlet;
@@ -132,7 +132,7 @@
 #X obj -268 402 s Walker;
 #X obj 14 -51 expr if (( Maze[$f1] != 0 ) \, 0 \, 1);
 #X obj -13 24 spigot;
-#X obj 14 -24 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 14 -24 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 2 339 v a1;
 #X obj 59 355 v a2;
@@ -149,7 +149,7 @@
 #X obj -25 258 t b a;
 #X obj -43 400 s Walker;
 #X obj 243 34 spigot;
-#X obj 270 -14 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 270 -14 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 258 364 v a1;
 #X obj 315 340 v a2;
@@ -411,7 +411,7 @@
 #X floatatom 245 -119 5 0 0 0 - - -;
 #X floatatom 284 -120 5 0 0 0 - - -;
 #X msg 40 198 set \$1 \$2;
-#X msg 40 220 0 6;
+#X msg 40 220 16 3;
 #X obj 80 78 r re_random;
 #X obj 80 125 t b b;
 #N canvas 0 22 635 716 show 0;
@@ -974,7 +974,7 @@
 #X obj 107 224 + 20;
 #X obj 237 282 t b b b;
 #X obj 105 117 hsl 100 15 0 1 0 0 empty empty Alpha 5 7 0 10 -258113
--1 -1 0 1;
+-1 -1 7300 1;
 #X obj 30 111 sel 0;
 #X msg 30 163 0;
 #X msg 61 139 1;
@@ -1019,6 +1019,10 @@
 #X obj -29 142 loadbang;
 #X obj -29 121 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
+#X obj 47 2 r touchosc;
+#X obj 47 26 routeOSC /vj;
+#X floatatom 47 72 5 0 0 0 - - -;
+#X obj 47 50 route /34;
 #X connect 2 0 11 0;
 #X connect 3 0 2 0;
 #X connect 3 1 6 0;
@@ -1147,4 +1151,8 @@
 #X connect 117 0 87 0;
 #X connect 118 0 64 0;
 #X connect 119 0 118 0;
+#X connect 120 0 121 0;
+#X connect 121 0 123 0;
+#X connect 122 0 77 0;
+#X connect 123 0 122 0;
 #X coords 0 -1 1 1 110 35 1 100 100;
