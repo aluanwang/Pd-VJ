@@ -1,4 +1,4 @@
-#N canvas -29 23 960 765 10;
+#N canvas 0 23 960 765 10;
 #X obj -340 51 gemhead;
 #X obj -340 201 alpha;
 #X obj -297 188 loadbang;
@@ -145,7 +145,7 @@
 #X obj 30 -7 r touchosc;
 #X obj 30 17 routeOSC /vj;
 #X floatatom 30 63 5 0 0 0 - - -;
-#X obj 30 41 route /35;
+#X obj 30 41 route /36;
 #X connect 0 0 45 0;
 #X connect 1 0 53 0;
 #X connect 2 0 3 0;
