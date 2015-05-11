@@ -1,5 +1,6 @@
-#N canvas 0 22 450 300 10;
-#X msg 97 119 create \, 1;
+#N canvas 0 22 452 380 10;
 #X obj 96 145 gemwin;
-#X obj 208 138 vj_cloud;
-#X connect 0 0 1 0;
+#X obj 201 165 vj_cloud;
+#X msg 97 119 destroy \, dimen 500 500 \, create \, 1;
+#X obj 319 79 k_mic;
+#X connect 2 0 0 0;

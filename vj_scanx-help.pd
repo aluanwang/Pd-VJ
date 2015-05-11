@@ -1,4 +1,4 @@
-#N canvas 146 361 450 300 10;
+#N canvas 524 132 450 300 10;
 #X msg -457 177 create \, 1;
 #X obj -457 206 gemwin;
 #X obj -381 139 vj_scanx;
