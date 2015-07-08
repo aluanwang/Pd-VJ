@@ -19,7 +19,7 @@
 #X floatatom -95 530 5 1 10 0 - - -;
 #X obj -298 443 t a b b;
 #X obj -95 451 sel 0;
-#X obj 106 118 hsl 100 15 0 1 0 0 empty empty Alpha 5 7 0 10 -258113
+#X obj 105 118 hsl 85 15 0 1 0 0 empty empty Alpha 5 7 0 10 -258113
 -1 -1 0 1;
 #X obj 103 173 sel 0;
 #X msg 103 225 0;
@@ -145,7 +145,21 @@
 #X obj 30 -7 r touchosc;
 #X obj 30 17 routeOSC /vj;
 #X floatatom 30 63 5 0 0 0 - - -;
-#X obj 30 41 route /36;
+#X obj 303 -174 r hid;
+#X obj 303 -152 t a a a;
+#X obj 378 -84 route key_145;
+#X obj 303 -74 spigot;
+#X obj 194 118 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 303 -25 sel 1;
+#X obj 366 10 line;
+#X msg 366 -13 \$1 20000;
+#X obj 303 -50 route key_38;
+#X obj -87 39 s totouch;
+#X obj -87 12 packOSC;
+#X msg -118 -37 send /vj/36 \$1;
+#X msg -87 -13 send /vj/t9 \$1;
+#X obj 30 41 route /36 /t9;
 #X connect 0 0 45 0;
 #X connect 1 0 53 0;
 #X connect 2 0 3 0;
@@ -175,6 +189,7 @@
 #X connect 20 0 21 0;
 #X connect 20 0 25 0;
 #X connect 20 0 105 0;
+#X connect 20 0 152 0;
 #X connect 21 0 22 0;
 #X connect 21 1 23 0;
 #X connect 22 0 24 0;
@@ -301,7 +316,22 @@
 #X connect 136 3 80 0;
 #X connect 137 3 90 0;
 #X connect 138 0 139 0;
-#X connect 139 0 141 0;
+#X connect 139 0 154 0;
 #X connect 140 0 20 0;
-#X connect 141 0 140 0;
+#X connect 141 0 142 0;
+#X connect 142 0 144 0;
+#X connect 142 2 143 0;
+#X connect 143 0 144 1;
+#X connect 144 0 149 0;
+#X connect 145 0 148 0;
+#X connect 145 0 153 0;
+#X connect 146 0 145 0;
+#X connect 147 0 20 0;
+#X connect 148 0 147 0;
+#X connect 149 0 146 0;
+#X connect 151 0 150 0;
+#X connect 152 0 151 0;
+#X connect 153 0 151 0;
+#X connect 154 0 140 0;
+#X connect 154 1 145 0;
 #X coords 0 -1 1 1 110 35 1 100 100;
