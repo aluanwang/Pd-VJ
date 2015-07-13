@@ -107,7 +107,7 @@
 #X obj 243 -125 t a a;
 #X obj 524 -131 t a a;
 #X obj -213 -10 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X obj -240 -172 inlet;
 #X obj -13 -159 inlet;
 #X obj 243 -152 inlet;
@@ -132,7 +132,7 @@
 #X obj -268 402 s Walker;
 #X obj 14 -51 expr if (( Maze[$f1] != 0 ) \, 0 \, 1);
 #X obj -13 24 spigot;
-#X obj 14 -24 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 14 -24 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 2 339 v a1;
 #X obj 59 355 v a2;
@@ -262,7 +262,7 @@
 #X obj 626 20 sel 0;
 #X obj 626 46 s re_random;
 #X obj 551 -39 expr if (( Maze[$f1] != 0 ) \, 0 \, 1);
-#X obj 551 -16 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 551 -16 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X floatatom 539 318 5 0 0 0 - - -;
 #X floatatom 598 319 5 0 0 0 - - -;
@@ -411,7 +411,7 @@
 #X floatatom 245 -119 5 0 0 0 - - -;
 #X floatatom 284 -120 5 0 0 0 - - -;
 #X msg 40 198 set \$1 \$2;
-#X msg 40 220 6 13;
+#X msg 40 220 11 10;
 #X obj 80 78 r re_random;
 #X obj 80 125 t b b;
 #N canvas 0 22 635 716 show 0;
