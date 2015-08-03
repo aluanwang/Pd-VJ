@@ -91,7 +91,7 @@
 #X obj 130 580 split 0.5 1;
 #X obj 194 59 s fog-tgl;
 #X obj 399 77 hsl 100 15 0.5 1 0 0 empty empty Rotate 5 7 0 10 -262144
--1 -1 3566 1;
+-1 -1 0 1;
 #X obj 473 216 metro 20;
 #X obj 406 570 loadbang;
 #X msg 405 597 auto 1;
@@ -193,12 +193,12 @@
 #X obj 484 422 pix_image data/grid25dot.png;
 #X obj 425 690 scale 9.5;
 #X obj 426 636 colorRGB 1 1 1 1;
-#X obj 250 708 model data/tunnel_2.obj;
-#X obj 425 714 model data/tunnel.obj;
 #X obj 249 623 colorRGB 0.15 0.15 0.15 0.1;
 #X obj 616 269 * 10;
 #X obj 396 100 k_range 0.5 1 90 180;
 #X obj 776 648 GLdefine GL_FRONT_AND_BACK;
+#X obj 425 714 model data/tunnel_3.obj;
+#X obj 250 708 model data/tunnel_2.obj;
 #X connect 0 0 142 0;
 #X connect 1 0 2 0;
 #X connect 2 0 16 0;
@@ -227,7 +227,7 @@
 #X connect 15 0 10 0;
 #X connect 16 0 17 0;
 #X connect 17 0 132 0;
-#X connect 17 0 151 0;
+#X connect 17 0 149 0;
 #X connect 18 0 13 0;
 #X connect 19 0 11 1;
 #X connect 20 0 42 0;
@@ -264,7 +264,7 @@
 #X connect 45 0 62 0;
 #X connect 46 0 73 0;
 #X connect 47 0 74 0;
-#X connect 49 0 152 0;
+#X connect 49 0 150 0;
 #X connect 50 0 11 0;
 #X connect 51 0 52 0;
 #X connect 52 0 67 0;
@@ -306,9 +306,9 @@
 #X connect 88 0 147 0;
 #X connect 88 1 94 0;
 #X connect 89 0 147 4;
-#X connect 90 0 150 0;
+#X connect 90 0 148 0;
 #X connect 90 1 92 0;
-#X connect 91 0 150 4;
+#X connect 91 0 148 4;
 #X connect 92 0 93 0;
 #X connect 93 0 91 0;
 #X connect 94 0 95 0;
@@ -337,7 +337,7 @@
 #X connect 115 0 61 0;
 #X connect 115 1 106 0;
 #X connect 116 0 85 0;
-#X connect 117 0 148 0;
+#X connect 117 0 153 0;
 #X connect 118 0 37 0;
 #X connect 118 0 14 0;
 #X connect 119 0 123 1;
@@ -357,7 +357,7 @@
 #X connect 134 0 138 0;
 #X connect 136 0 137 0;
 #X connect 137 0 139 0;
-#X connect 137 0 153 0;
+#X connect 137 0 151 0;
 #X connect 138 0 140 0;
 #X connect 138 0 144 0;
 #X connect 139 0 135 2;
@@ -367,11 +367,11 @@
 #X connect 143 0 101 0;
 #X connect 144 0 133 1;
 #X connect 145 0 121 0;
-#X connect 146 0 149 0;
+#X connect 146 0 152 0;
 #X connect 147 0 67 0;
-#X connect 148 0 135 0;
-#X connect 150 0 120 0;
-#X connect 151 0 83 1;
-#X connect 152 0 0 0;
-#X connect 153 0 135 1;
+#X connect 148 0 120 0;
+#X connect 149 0 83 1;
+#X connect 150 0 0 0;
+#X connect 151 0 135 1;
+#X connect 153 0 135 0;
 #X coords 0 -1 1 1 110 35 1 100 100;
