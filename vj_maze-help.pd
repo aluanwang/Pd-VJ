@@ -1,0 +1,15 @@
+#N canvas 483 187 495 320 10;
+#X msg 30 225 destroy;
+#X obj 30 252 gemwin;
+#X obj 30 176 sel 0 1;
+#X obj 30 138 tgl 30 0 empty empty empty 17 7 0 10 -258113 -1 -1 1
+1;
+#X obj 119 21 vj_maze;
+#X msg 48 200 reset \, frame 100 \, dimen 500 500 \, color 0 0 0 \,
+create \, 1;
+#X obj 121 66 k_mic;
+#X connect 0 0 1 0;
+#X connect 2 0 0 0;
+#X connect 2 1 5 0;
+#X connect 3 0 2 0;
+#X connect 5 0 1 0;

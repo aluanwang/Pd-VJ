@@ -38,7 +38,7 @@
 #X obj 611 98 expr int($f1/30)%30;
 #X obj 611 120 % 2;
 #X obj 595 211 % 2;
-#X obj 748 -61 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 748 -61 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 748 100 tabwrite \$0grid_z;
 #X obj 748 19 f;
@@ -60,7 +60,7 @@
 #X msg 44 66 10000;
 #X msg 63 90 -5;
 #X obj 205 113 tgl 20 0 empty empty empty -70 8 0 12 -262144 -1 -1
-0 1;
+1 1;
 #X obj 199 50 loadbang;
 #X msg 199 71 0;
 #X obj 248 86 r trigger3d;
@@ -70,7 +70,7 @@
 #X obj 856 45 * 1;
 #X obj -5 -460 r hid;
 #X obj 24 -301 zexy/list2symbol;
-#N canvas 365 22 342 273 convert_pointer_to_anything 0;
+#N canvas 365 22 417 310 convert_pointer_to_anything 1;
 #X obj 169 102 symbol;
 #X obj 169 224 t a;
 #X obj 104 177 spigot;
@@ -112,12 +112,12 @@
 #X connect 11 0 0 0;
 #X connect 24 0 1 0;
 #X restore 26 -405 pd convert_pointer_to_anything;
-#X symbolatom 103 115 16 0 0 0 - - -;
+#X symbolatom 103 115 12 0 0 0 - - -, f 12;
 #X obj 26 -439 r displayipad;
 #X obj 118 -182 unpack f f f;
 #X obj 118 -204 spigot;
-#X floatatom 152 -105 5 0 0 0 - - -;
-#X floatatom 200 -183 5 0 0 0 - - -;
+#X floatatom 152 -105 5 0 0 0 - - -, f 5;
+#X floatatom 200 -183 5 0 0 0 - - -, f 5;
 #X obj 125 -270 tgl 15 0 empty empty empty 17 7 0 10 -4034 -262144
 -262144 0 1;
 #X obj -2 -372 route /accxyz;
@@ -132,7 +132,7 @@
 #X obj 323 -307 t f f f;
 #X obj 415 -344 change;
 #X obj 118 -140 k_speed 100;
-#X floatatom 118 -162 5 0 0 0 - - -;
+#X floatatom 118 -162 5 0 0 0 - - -, f 5;
 #X obj 152 -79 k_speed 100;
 #X obj 69 -24 s roXX;
 #X obj 178 -21 s roYY;
@@ -154,8 +154,8 @@
 #X obj 327 -412 spigot;
 #X obj 307 -257 r t-mouse-x;
 #X obj 421 -296 r t-mouse-y;
-#X floatatom 307 -233 5 0 0 0 - - -;
-#X floatatom 421 -271 5 0 0 0 - - -;
+#X floatatom 307 -233 5 0 0 0 - - -, f 5;
+#X floatatom 421 -271 5 0 0 0 - - -, f 5;
 #X obj 307 -165 spigot;
 #X obj 307 -213 moses 1;
 #X obj 421 -249 moses 1;
@@ -170,7 +170,7 @@
 #X obj 307 -188 k_range 0 1 -1 1;
 #X obj 421 -225 k_range 0 1 -1 1;
 #X obj 327 -387 route key_224;
-#X floatatom 894 53 5 0 0 0 - - -;
+#X floatatom 894 53 5 0 0 0 - - -, f 5;
 #X text 472 -434 option+control;
 #X connect 1 0 9 0;
 #X connect 2 0 3 0;

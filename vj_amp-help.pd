@@ -1,5 +1,5 @@
 #N canvas 612 346 173 242 10;
-#X msg -3050 -4164 create \, 1;
-#X obj -3051 -4137 gemwin;
-#X obj -3050 -4209 vj_amp;
+#X msg 24 150 create \, 1;
+#X obj 23 177 gemwin;
+#X obj 24 105 vj_amp;
 #X connect 0 0 1 0;

@@ -1,0 +1,9 @@
+#N canvas 697 235 318 357 10;
+#X obj 41 146 gemwin;
+#X msg 41 120 reset FSAA 8 \, create \, 1;
+#X msg 24 98 destroy;
+#X obj 94 31 k_camera;
+#X obj 57 182 vj_neontrails;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 0;

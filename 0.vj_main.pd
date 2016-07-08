@@ -1,5 +1,0 @@
-#N canvas 761 163 414 536 10;
-#X declare -lib mrpeach;
-#X obj -237 138 k_win;
-#X obj -238 50 vj_sub;
-#X obj -86 47 vj_movie;

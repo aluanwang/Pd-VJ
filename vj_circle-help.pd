@@ -5,7 +5,10 @@
 #X obj 218 39 adc~;
 #X obj 218 65 env~;
 #X obj 218 87 autoscale;
+#X obj 127 166 loadbang;
+#X msg 127 188 \; pd dsp 1;
 #X connect 0 0 1 0;
 #X connect 3 0 4 0;
 #X connect 4 0 5 0;
 #X connect 5 0 2 0;
+#X connect 6 0 7 0;

@@ -1,10 +1,10 @@
 #N canvas 411 197 900 423 10;
-#X obj 86 -29 gemwin;
+#X obj 166 330 gemwin;
 #X obj 475 278 loadbang;
 #X obj 364 171 gemhead;
 #X msg 433 166 end \$1;
-#X msg 86 -55 reset FSAA 8 \, create \, 1;
-#X msg 69 -77 destroy;
+#X msg 166 304 reset FSAA 8 \, create \, 1;
+#X msg 149 282 destroy;
 #X obj 364 266 vj_quarter 2;
 #X obj 162 188 loadbang;
 #X obj 11 170 gemhead;
@@ -16,17 +16,17 @@
 #X obj 11 265 vj_quarter 2;
 #X msg 475 302 color 0 1 0 \, drawline 1 \, drawfill 1 \, drawpoint
 1 \, stroke 0.6 \, end 0.5 \, width 2;
-#X msg 162 212 color 1 0 0 \, drawline 1 \, drawfill 1 \, drawpoint
-1 \, stroke 0.6 \, end 0.5 \, width 2;
 #X obj 433 51 adc~;
 #X obj 433 73 env~;
 #X obj 433 99 autoscale 0.8 0.9;
+#X msg 162 212 color 1 0 0 \, drawline 1 \, drawfill 1 \, drawpoint
+1 \, stroke 0.6 \, end 0.5 \, width 2;
 #X connect 1 0 15 0;
 #X connect 2 0 6 0;
 #X connect 3 0 6 1;
 #X connect 4 0 0 0;
 #X connect 5 0 0 0;
-#X connect 7 0 16 0;
+#X connect 7 0 19 0;
 #X connect 8 0 12 0;
 #X connect 9 0 14 1;
 #X connect 10 0 9 0;
@@ -35,7 +35,7 @@
 #X connect 13 0 3 0;
 #X connect 13 0 10 0;
 #X connect 15 0 6 1;
-#X connect 16 0 14 1;
+#X connect 16 0 17 0;
 #X connect 17 0 18 0;
-#X connect 18 0 19 0;
-#X connect 19 0 13 0;
+#X connect 18 0 13 0;
+#X connect 19 0 14 1;
