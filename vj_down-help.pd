@@ -1,4 +1,4 @@
-#N canvas 714 261 625 433 10;
+#N canvas 714 261 515 227 10;
 #X obj 86 88 cnv 15 100 60 empty empty empty 20 12 0 14 -195568 -66577
 0;
 #N canvas 0 22 450 300 gemwin 0;
@@ -23,5 +23,16 @@
 #X msg 91 108 destroy;
 #X text 87 87 Create window:;
 #X obj 86 162 vj_down;
+#X obj 239 26 adc~;
+#X obj 239 51 env~;
+#X floatatom 239 76 5 0 0 0 - - -, f 5;
+#X obj 239 95 expr (($f1-40)/60);
+#X obj 239 117 expr if($f1<0.5 \, 0.1 \, $f1*5);
 #X connect 1 0 2 0;
 #X connect 2 0 1 0;
+#X connect 5 0 6 0;
+#X connect 5 0 4 2;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 9 0 4 1;
